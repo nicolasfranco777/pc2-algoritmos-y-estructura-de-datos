@@ -1,1 +1,172 @@
 
+🔷 1. Lista enlazada simple
+
+👉 Forma:
+
+[10] → [20] → [30] → null
+
+👉 Características:
+
+Cada nodo apunta al siguiente
+
+Solo se recorre en una dirección
+
+
+👉 Ejemplo:
+
+lista de tareas:
+
+
+Tarea1 → Tarea2 → Tarea3
+
+🔷 2. Lista doblemente enlazada
+
+👉 Forma:
+
+null ← [10] ↔ [20] ↔ [30] → null
+
+👉 Características:
+
+Cada nodo tiene:
+
+siguiente
+
+anterior
+
+
+Puedes ir adelante y atrás
+
+
+👉 Ejemplo:
+
+historial de navegador
+
+
+Google ↔ YouTube ↔ Reddit
+
+🔷 3. Lista circular
+
+👉 Forma:
+
+[10] → [20] → [30]
+  ↑               ↓
+  └───────────────┘
+
+👉 Características:
+
+El último nodo apunta al primero
+
+No existe null
+
+
+👉 Ejemplo:
+
+turnos rotativos
+
+
+Jugador1 → Jugador2 → Jugador3 → (vuelve a Jugador1)
+
+🔷 4. Lista doble circular
+
+👉 Forma:
+
+[10] ↔ [20] ↔ [30]
+ ↑               ↓
+ └───────────────┘
+
+👉 Características:
+
+Circular + doble enlace
+
+Puedes recorrer en ambas direcciones sin fin
+
+
+👉 Ejemplo:
+
+carrusel de imágenes (slider infinito)
+
+🔷 5. Lista con prioridad (cola de prioridad)
+
+👉 Forma:
+
+[10] → [5] → [1]
+
+(Pero el orden depende de prioridad, no de inserción)
+
+👉 Características:
+
+No respeta orden de llegada
+
+Sale primero el más importante
+
+
+👉 Ejemplo:
+
+hospital
+
+
+Emergencia → Grave → Leve
+
+🔷 6. Lista tipo pila (Stack)
+
+👉 Forma:
+
+[3]
+ ↓
+[2]
+ ↓
+[1]
+
+👉 Características:
+
+LIFO (último en entrar, primero en salir)
+
+
+👉 Ejemplo:
+
+Ctrl + Z
+
+🔷 7. Lista tipo cola (Queue)
+
+👉 Forma:
+
+[1] → [2] → [3]
+
+👉 Características:
+
+FIFO
+
+👉 Ejemplo:
+
+fila de personas
+
+🔷 8. Lista indexada (tipo arreglo dinámico)
+
+👉 Forma:
+
+[10] [20] [30] [40]
+
+👉 Características:
+
+Tiene posiciones (índices)
+
+Acceso directo
+
+👉 Ejemplo:
+
+lista de alumnos por posición
+
+🔥 DIFERENCIA CLAVE ENTRE TODAS
+
+Tipo	Cómo funciona
+
+Enlazada simple	Solo hacia adelante
+Doble	Adelante y atrás
+Circular	No termina
+Prioridad	Orden por importancia
+Cola	FIFO
+Pila	LIFO
+Arreglo	Acceso por índice
+🧠 RESUMEN
+
+> “Existen diferentes tipos de listas como la lista enlazada simple, doble, circular y con prioridad. Cada una se utiliza según la forma de acceso y manipulación de los datos.”
