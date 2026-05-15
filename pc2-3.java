@@ -132,6 +132,29 @@ class ListaEnlazada {
 
         return nueva;
     }
+    public void eliminarCiclo() {
+
+        if (!detectarCiclo()) {
+            return;
+        }
+
+        Nodo lento = cabeza;
+        Nodo rapido = cabeza;
+
+        do {
+            lento = lento.siguiente;
+            rapido = rapido.siguiente.siguiente;
+        } while (lento != rapido);
+
+        lento = cabeza;
+
+        while (lento.siguiente != rapido.siguiente) {
+            lento = lento.siguiente;
+            rapido = rapido.siguiente;
+        }
+
+        rapido.siguiente = null;
+    }
 }
 
 public class Main {
@@ -148,7 +171,8 @@ public class Main {
                 5. Detectar ciclo lista 1
                 6. Crear ciclo lista 1
                 7. Fusionar listas
-                8. Salir
+                8. eliminar ciclo
+                9. Salir
                 
                 Opcion:
                 """;
@@ -227,8 +251,11 @@ public class Main {
                     System.out.println("Lista fusionada:");
                     System.out.println(fusion.mostrar());
                 }
-
                 case 8 -> {
+                    lista1.eliminarCiclo();
+                    System.out.println("ciclo eliminado");
+
+                case 9 -> {
                     System.out.println("Programa finalizado");
                 }
 
